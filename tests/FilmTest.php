@@ -20,7 +20,7 @@ final class FilmTest extends TestCase
       {
             $f = new ModelFilm();
             $g = $f->getFilms();
-            foreach ($g as $film) {   // à faire : cibler l'indice 0 
+            foreach ($g as $film) {   // à faire : cibler l'indice 0  
                 $this->assertArrayHasKey('titre', $film, 'Un des films ne contient pas de clé "titre"');
                 $this->assertArrayHasKey('affiche', $film, 'Un des films ne contient pas la clé "affiche".');
             }
